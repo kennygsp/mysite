@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-shape-color:linear-gradient(120deg,  #343A4F, #0F1620) ;
+}
+body {
+    background-image: url('/workspaces/mysite/images/space.jpg');
+    background-size: cover;
+}
+/*===== Universal =====*/
+/*** Navigation Menu ***/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Inter';
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav li  a {
+    text-decoration: none;
+    color: #fff;
+}
+nav li a:hover {
+    color: #F8B038;
+}
+/*===== Portfolio =====*/
+/*** Portfolio Headers ***/
+.pheader {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5%;
+    color: #fff;
+}
+.blur{
+    backdrop-filter: blur(10px);
+    width: 301px;
+    padding: 20px;
+    margin: 0 auto;
+}
+/*** Cards ***/
+.personalprojects {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Inter';
+}
+.schoolprojects {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 1%;
+    font-family: 'Inter';
+}
+.wrapper {
+    box-shadow: 0 2px 5px 1px grey;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background: #4d6f9b;
+    overflow: hidden;
+}
+.cardoverview {
+    background: var(--bg-shape-color);
+}
+.cardinfo {
+    color: #D5E1EF;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100px;
+}
+.carddesc {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.cardimg {
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 15px;
+}
+/*** Images ***/
+.allimg {
+    display: flex;
+    padding-left: 220px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    mix-blend-mode: exclusion;
+}
+/*** Buttons ***/
+.btn {
+    position: absolute;
+    padding-left: 232px;
+    padding-top: 150px; 
+}
+.afobtn {
+    position: absolute;
+    padding-left: 232px;
+    padding-top: 110px;
+}
+.currbtn {
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 160px;
+}
+.cardbtn {
+    background: #D5E1EF;
+	border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	border: none;
+    text-decoration: bold;
+	color: black;
+}
+/*** Tags ***/
+.tag {
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 7px;
+    text-transform: uppercase;
+  }
+.tagjs {
+    color: black;
+    background-color: #F0DB4F;
+  }
+.taghtml {
+    background-color: #e34c26;
+  }
+.tagcss {
+    color: black;
+    background-color: #35B0F5;
+  }
+.tagpy {
+    color: black;
+    background: rgb(48,105,152);
+    background: linear-gradient(90deg, rgba(48,105,152,1) 30%, rgba(255,212,59,1) 100%);
+}
+/*===== Contact =====*/
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat';
+}
+.contactwrapper {
+    box-shadow: 0 2px 5px 1px grey;
+    width: 950px;
+    height: 550px;
+    border-radius: 20px;
+    background: var(--bg-shape-color);
+    overflow: hidden;
+}
+.contactoverview {
+    background-color: #fff;
+    height: 550px;
+    width: 705px;
+}
+.contactheader {
+    text-align: center;
+    padding-top: 45px;
+}
+/*** Form ***/
+.contactform {
+    position: absolute;
+    padding-left: 101px;
+}
+.forminput {
+    color:black;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: transparent;
+    border:2px solid #E0E0E0;
+    transition: all 0.3s;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline:0;
+}
+textarea {
+    font-family: 'Montserrat';
+    height: 150px;
+    resize: none;
+}
+[type = "submit"] {
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 15px;
+    background-color: #DD5471;
+    border:2px solid #E0E0E0;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline:0;
+    cursor: pointer;
+}
+form {
+    width: 500px;
+}
+/*** Icons ***/
+.icons {
+    height: 75px;
+    width: 75px;
+}
+.iconbar {
+    position: absolute;
+    padding-left: 790px;
+}
+.iconbar a{
+    display: block;
+}
+/*===== About Me =====*/
+/*** Intro ***/
+.intro {
+    font-family: 'Montserrat';
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 115px;
+}
+.aboutme {
+    padding-top: 1%;
+    padding-left: 35%;
+    color: #fff;
+}
+.aboutmetxt {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding-left: 25px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.headshot {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
