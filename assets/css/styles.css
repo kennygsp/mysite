@@ -7,21 +7,24 @@
     --bg-shape-color:linear-gradient(120deg,  #343A4F, #0F1620) ;
 }
 html {
-    height: 100%;
-    width: 100%;
-}
-body {
-    background-image: url('/mysite/assets/images/space.jpg');
+    background-image: url('/mysite/assets/images/space2.jpg');
     background-size: cover;
 }
+
 /*===== Universal =====*/
 /*** Navigation Menu ***/
+.homelogo {
+    color: #fff;
+    font-size: calc(10px + 1vw);
+}
 nav {
+    height: 65px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-left: 10%;
+    padding-top: 4%;
+    padding-left: 5%;
     padding-right: 10%;
     font-family: 'Inter';
 }
@@ -33,6 +36,8 @@ nav ul li {
 nav li  a {
     text-decoration: none;
     color: #fff;
+    font-size: calc(5px + 1vw);
+
 }
 nav li a:hover {
     color: #F8B038;
@@ -43,7 +48,7 @@ nav li a:hover {
     font-family: 'Montserrat';
     font-size: 20px;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
     color: #fff;
 }
 .blur{
@@ -71,7 +76,7 @@ nav li a:hover {
 .wrapper {
     box-shadow: 0 2px 5px 1px grey;
     width: 350px;
-    height: 250px;
+    min-height:250px;
     border-radius: 20px;
     background: #4d6f9b;
     overflow: hidden;
@@ -166,7 +171,7 @@ nav li a:hover {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    padding-top: 5%;
+    padding-top: 8%;
     padding-bottom: 1%;
     font-family: 'Montserrat';
 }
@@ -180,17 +185,17 @@ nav li a:hover {
 }
 .contactoverview {
     background-color: #fff;
-    height: 550px;
-    width: 705px;
+    height: 100%;
+    width: 75%;
 }
 .contactheader {
     text-align: center;
-    padding-top: 45px;
+    padding-top: 4%;
 }
 /*** Form ***/
 .contactform {
     position: absolute;
-    padding-left: 101px;
+    padding-left: 8.5%;
 }
 .forminput {
     color:black;
@@ -225,7 +230,7 @@ textarea {
     cursor: pointer;
 }
 form {
-    width: 500px;
+    width: 60%;
 }
 /*** Icons ***/
 .icons {
@@ -264,8 +269,4 @@ form {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}
-
-@media (min-width: 900px) {
-		
 }
