@@ -6,9 +6,11 @@
 :root {
     --bg-shape-color:linear-gradient(120deg,  #343A4F, #0F1620) ;
 }
-body {
+html {
     height: 100%;
     width: 100%;
+}
+body {
     background-image: url('/mysite/assets/images/space.jpg');
     background-size: cover;
 }
