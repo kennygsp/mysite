@@ -7,7 +7,7 @@
     --bg-shape-color:linear-gradient(120deg,  #343A4F, #0F1620) ;
 }
 body {
-    background-image: url('/workspaces/mysite/images/space.jpg');
+    background-image: url('assets/images/space.jpg');
     background-size: cover;
 }
 /*===== Universal =====*/
