@@ -195,8 +195,6 @@ nav li a:hover {
 /*** Form ***/
 .contactform {
     position: absolute;
-    padding-left: 8.5%;
-    width: 47.5%;
 }
 .forminput {
     color:black;
@@ -231,7 +229,8 @@ textarea {
     cursor: pointer;
 }
 form {
-    width: 100%;
+    width: 55vmin;
+    padding-left: 5em;
 }
 /*** Icons ***/
 .icons {
