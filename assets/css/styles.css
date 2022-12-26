@@ -251,10 +251,11 @@ form {
     position: absolute;
     padding-top: 50px;
     padding-left: 115px;
+    width: 85vw;
 }
 .aboutme {
     padding-top: 1%;
-    padding-left: 35%;
+    padding-left: 15em;
     color: #fff;
 }
 .aboutmetxt {
