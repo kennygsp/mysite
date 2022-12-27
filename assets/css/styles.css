@@ -23,9 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4%;
-    padding-left: 5%;
-    padding-right: 10%;
+    padding: 3em 5em 3em 5em
     font-family: 'Inter';
 }
 nav ul li {
@@ -171,8 +169,7 @@ nav li a:hover {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    padding-top: 8%;
-    padding-bottom: 1%;
+    padding-top: 5em;
     font-family: 'Montserrat';
 }
 .contactwrapper {
@@ -229,7 +226,7 @@ textarea {
     cursor: pointer;
 }
 form {
-    width: 55vmin;
+    width: clamp(225px, 35vw, 40vw);
     padding-left: 5em;
 }
 /*** Icons ***/
