@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 5em 3em 5em
+    padding: 3em 5em 3em 5em;
     font-family: 'Inter';
 }
 nav ul li {
