@@ -107,7 +107,7 @@
     color: #fff;
     align-self: flex-end;
     text-align: center;
-    padding: 0rem 5rem 1rem 5rem;
+    padding: 0rem 5rem 2.5rem 5rem;
     font-size: 2em;
     font-family: 'Clash Display';
 }
@@ -181,31 +181,46 @@
 /*======== About =========*/
 .aboutpage {
     display: flex;
+    background-color: #000000;
+    padding-top: 2rem;
 }
-.aboutme {
-    color: #fff;
+.aboutmeintro {
+    letter-spacing: 1.5px;
+    color: #ffffff;
     font-family: "Clash Display";
+    font-size: 1rem;
+    margin: auto;
+}
+.aboutmeintro button {
+    height: 5vh;
+    width: 10vw;
+    background-color: #296ebd;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.headshot {
+    margin-left: 5rem;
 }
 .headshot img {
     height: 50vh;
     width: 25vw;
-    border-radius: 10px;
+    padding-right: 10rem;
+    filter: drop-shadow(1rem 1rem 1rem #272626);
 }
 .skills {
-    margin-top: 2.5rem;
+    position: absolute;
     display: flex;
     height: 5vh;
-    width: 105vw;
-    background-color: #f8f8f8;
-    transform: rotate(-0.99deg);
+    width: 100vw;
+    background-color: #fff;
     justify-content: space-evenly;
 }
 .skills p {
     margin-top: 0.6rem;
     font-family: "Inter";
     font-weight: 700;
-    color: #1D1E22;
-    transform: rotate(-0.99deg);
 }
 
 /*======== Projects =========*/
