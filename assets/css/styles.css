@@ -66,33 +66,32 @@
     -webkit-text-fill-color:#fff;
 }
 /* Intro */
-.intro {
+.introbg {
+    position:absolute;
     color: white;
     background-color: black;
     display: flex;
-    position: relative;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     justify-content: space-between;
     overflow: hidden;
 }
-.intro ul li {
+.introbg ul li {
     list-style-type: none;
     flex-direction: column;
     padding-bottom: 1rem;
 }
-.intro img {
+.introbg img {
     height: 50vh;
     width: 30vw;
     border-radius: 10px;
-
 }
 .first-col {
     margin-left: -2rem;
-    margin-top: -2.5rem;
+    margin-top: -12.5rem;
 }
 .middle-col {
-    margin-top: -7.5rem;
+    margin-top: -18rem;
 }
 .middle-col img {
     height: 40vh;
@@ -101,7 +100,7 @@
 }
 .last-col {
     margin-right: -2rem;
-    margin-top: -2.5rem;
+    margin-top: -12.5rem;
 }
 .fadetop {
     position: absolute;
@@ -113,7 +112,7 @@
     position: absolute;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0, 0, 0) 99%);
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 .text {
     position: absolute;
@@ -204,6 +203,7 @@
     font-family: "Clash Display";
     font-size: 1rem;
     margin: auto;
+    z-index: 1;
 }
 .aboutmeintro button {
     height: 5vh;
@@ -223,7 +223,7 @@
 }
 .headshot img {
     height: 50vh;
-    width: 22vw;
+    width: 25vw;
     padding-right: 10rem;
     filter: drop-shadow(1rem 1rem 1rem #272626);
 }
@@ -244,13 +244,29 @@
 /*======== Projects =========*/
 .project {
     display: flex;
+    background-image: linear-gradient(to right, rgba(0, 0, 96, 0.411), rgb(0, 0, 0) 50%);
+    padding-bottom: 2rem;
+}
+.project2 {
+    display: flex;
+    background-image: linear-gradient(to left, rgba(0, 0, 96, 0.411), rgb(0, 0, 0) 50%);
+    padding-bottom: 2rem;
 }
 .projectimgbox {
-    background-color: #b7b7d1;
     border-radius: 2rem;
-    height: 75vh;
+    border-style: solid;
+    border-color: white;
+    height: 70vh;
     width: 40vw;
-    margin: 2rem 0 0 6rem;
+    margin: 2rem 0 0 5rem;
+}
+.projectimgbox2 {
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: white;
+    height: 70vh;
+    width: 40vw;
+    margin: 2rem 0 0 5rem;
 }
 .projectimgbox img{
     height: 35vh;
@@ -261,15 +277,28 @@
 .projectdesc {
     color: #fff;
     font-family: "Clash Display";
-    margin: 15rem 0 0 2rem;
+    width: 40vw;
+    margin: 12.5rem 0 0 2rem;
     letter-spacing: 1px;
 }
 .projectdesc2 {
+    display: flex;
+    flex-direction: row-reverse;
     color: #fff;
     font-family: "Clash Display";
-    margin: 15rem 0 0 7rem;
+    margin: 15rem 0 0 10rem;
     letter-spacing: 1px;
     width: 38vw;
+}
+.preview {
+    margin: 0px 0 0 10px;
+    border-radius: 5px;
+    height: 25px;
+    width: 75px;
+    background-color: #296ebd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 /*======== Contact =========*/
 .formpage {
