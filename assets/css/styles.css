@@ -133,15 +133,15 @@
 .categories {
     color: #8b9399;
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem 35rem 0 35rem;
+    margin: -.20rem 0 0 0;
 }
 .categories p {
     font-size: 0.25em;
     border: 0.5px solid #242628;
-    padding: 0.5rem;
     font-family: "Clash Display";
     border-radius: 2.5px;
+    margin: 0 0 0 1rem;
+    padding: 0.15rem;
 }
 .blog {
     padding-top: 1.5rem;
@@ -149,10 +149,9 @@
 .blogcontainer {
     color: #fff;
     height: 100vh;
-    width: 88vw;
+    width: 90vw;
     margin: auto;
     padding-bottom: 2.5rem;
-
 }
 .post {
     position: relative;
@@ -185,11 +184,56 @@
 .blogpage {
     color: #fff;
     font-family: "Clash Display";
+    width: 70vw;
+    margin: 5rem 0 0 5rem;
+    border: 1px solid #36393c;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
 }
 .blogtitle {
-    padding-top: 2.5rem;
-    text-align: center;
     font-size: 3em;
+    margin: 1rem 0 0 2rem;
+}
+.blogbox {
+    padding: 5rem 0 1rem 2.5rem;
+    border-bottom: 1px solid #36393c;
+    background-image: linear-gradient(to left, rgba(0, 0, 96, 0.411), rgb(0, 0, 0) 50%);
+}
+.blogfooter {
+    padding: 1rem 0 1rem 2.5rem;
+    border-top: 1px solid #36393c;
+}
+.miniheader {
+    display: flex;
+    margin: 0 0 0 1.5rem;
+}
+.miniheader p {
+    font-size: 0.75rem;
+    color: #8b9399;
+    margin: 0 0.5rem 0 0.5rem;
+}
+.blog {
+    margin: 1rem 0 1rem 2.5rem;
+}
+.blogshare {
+    display: flex;
+    border-radius: 1rem;
+    border: 1px solid #36393c;
+    height: 10vh;
+    width: 20vw;
+    margin: 0 0 0 2.5rem;
+}
+.blogshare button {
+    margin: auto;
+    height: 50%;
+    width: 95%;
+    border-radius: 5px;
+    font-family: "Clash Display";
+}
+.blogshare img {
+    height: 15px;
+    width: 15px;
 }
 /*======== About =========*/
 .aboutpage {
@@ -220,25 +264,42 @@
     margin: 5rem 15rem 0 15rem;
     text-align: center;
     letter-spacing: 1.5px;
+    position: absolute;
 }
 .headshot img {
-    height: 50vh;
-    width: 25vw;
+    height: 300px;
+    width: 300px;
     padding-right: 10rem;
     filter: drop-shadow(1rem 1rem 1rem #272626);
 }
 .skills {
     position: absolute;
-    display: flex;
     height: 5vh;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
-    justify-content: space-evenly;
+    overflow: hidden;
+
 }
-.skills p {
+.skillstxt {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    animation: move 20s linear infinite;
+    transform: translateX(100%);
+}
+.skillstxt2 {
+    margin: -2.6rem 0 0 0;
+    animation-delay: 9.7s;
+}
+
+.skills li {
     margin-top: 0.6rem;
     font-family: "Inter";
     font-weight: 700;
+}
+
+@keyframes move {
+    to{transform: translateX(-100%);}
 }
 
 /*======== Projects =========*/
@@ -253,12 +314,15 @@
     padding-bottom: 2rem;
 }
 .projectimgbox {
+    position: relative;
     border-radius: 2rem;
     border-style: solid;
     border-color: white;
     height: 70vh;
     width: 40vw;
     margin: 2rem 0 0 5rem;
+    overflow: hidden;
+    display: flex;
 }
 .projectimgbox2 {
     border-radius: 2rem;
@@ -271,7 +335,6 @@
 .projectimgbox img{
     height: 35vh;
     width: 25vw;
-    position: absolute;
     filter: drop-shadow(0rem 1rem 2rem #272626);
 }
 .projectdesc {
@@ -378,8 +441,8 @@
 .icons img{
     display: block;
     margin-top: 2.5rem;
-    height: 10vh;
-    width: 5vw;
+    height: 75px;
+    width: 75px;
     border-radius: 1rem;
 
 }
