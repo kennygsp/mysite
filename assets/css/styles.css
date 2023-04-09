@@ -36,17 +36,17 @@
 }
 /* Footer */
 .footer {
-    display: flex;
     color: #fff;
     border-top: 0.5px solid #242628;
+    margin: 1rem;
 }
-.footer p {
-    font-family: "Clash Display";
-    margin: auto;
-}
+
 .footer img {
-    height: 10vh;
-    width: 5vw;
+    margin: 1rem 0 0 0;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
 }
 /*======== Home =========*/
 /* Name logo */
@@ -71,7 +71,7 @@
     color: white;
     background-color: black;
     display: flex;
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
     justify-content: space-between;
     overflow: hidden;
@@ -214,7 +214,7 @@
     margin: 0 0.5rem 0 0.5rem;
 }
 .blog {
-    margin: 1rem 0 1rem 2.5rem;
+    margin: 1rem 0 0 2.5rem;
 }
 .blogshare {
     display: flex;
@@ -229,7 +229,6 @@
     height: 50%;
     width: 95%;
     border-radius: 5px;
-    font-family: "Clash Display";
 }
 .blogshare img {
     height: 15px;
@@ -261,10 +260,9 @@
 .aboutme {
     font-family: "Clash Display";
     color: #fff;
-    margin: 5rem 15rem 0 15rem;
+    margin: 5rem 10rem 0 10rem;
     text-align: center;
     letter-spacing: 1.5px;
-    position: absolute;
 }
 .headshot img {
     height: 300px;
